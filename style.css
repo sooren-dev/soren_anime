@@ -1,0 +1,91 @@
+
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #e0f7fa;
+    color: #333;
+}
+
+header {
+    background-color: #66bb6a;
+    padding: 10px 20px;
+}
+
+nav a {
+    margin: 0 10px;
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+}
+
+footer {
+    background-color: #81d4fa;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+/* removed .anime-grid */ {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.anime-card {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    text-align: center;
+    overflow: hidden;
+}
+
+.anime-card img {
+    width: 100%;
+    height: 270px;
+    object-fit: cover;
+}
+
+.anime-card h2 {
+    font-size: 1rem;
+    padding: 10px;
+    background: #e0f7fa;
+    margin: 0;
+}
+
+
+.anime-row {
+    display: flex;
+    overflow-x: auto;
+    gap: 20px;
+    padding: 20px;
+    scroll-snap-type: x mandatory;
+}
+
+.anime-card {
+    flex: 0 0 auto;
+    width: 180px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    text-align: center;
+    overflow: hidden;
+    scroll-snap-align: start;
+}
+
+.anime-card img {
+    width: 100%;
+    height: 270px;
+    object-fit: cover;
+}
+
+.anime-card h2 {
+    font-size: 1rem;
+    padding: 10px;
+    background: #e0f7fa;
+    margin: 0;
+}
